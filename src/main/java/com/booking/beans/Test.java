@@ -14,6 +14,7 @@ public class Test {
 		Patient p = new Patient();
 		Doctor d = new Doctor();
 		Admin a= new Admin();
+		Appointment a1 = new Appointment();
 		manager.getTransaction().commit();
 		
 		

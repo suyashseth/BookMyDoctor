@@ -1,6 +1,5 @@
 package com.booking.beans;
 
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +20,6 @@ public class Patient {
 	private String gender;
 	private String email;
 	private String diseases;
-
 	private String city;
 	private String password;
 
