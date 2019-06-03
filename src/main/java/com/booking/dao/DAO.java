@@ -13,8 +13,10 @@ public interface DAO {
 	public boolean addPatient(Patient patient);
 
 	public boolean addDoctor(Doctor doctor);
+	
+	public Doctor doctorLogin(String mail ,String passsword);
 
-	public Appointment doctorLogin(int id,String password);
+	public Appointment checkAppointment(int id);
 
 	public Patient patientLogin(int id,String password);
 
@@ -24,20 +26,16 @@ public interface DAO {
 
 	public boolean deleteAppointment();
 
-	public boolean deleteDoctor();
+	public boolean deleteDoctor(int did);
 
 	public List<Appointment> viewAllAppointment();
 
 	public boolean selectAppintment();
 
-	public Doctor searchDoctorByCity(String city);
-	
-	public Doctor searchDoctorBySpeciality(String speciality);
+	public List<Doctor> searchDoctorByCity(String city);
 
-	public boolean updateDoctor(Doctor doctor);
-	
-	public boolean updatePatient(Patient patient);
-	
+	public List<Doctor> searchDoctorBySpeciality(String speciality);
+
 	
 
 
